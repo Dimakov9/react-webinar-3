@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { numberWithSpaces } from "../../utils";
 import "./style.css";
 
 function Item(props) {
-  // Счётчик выделений
-  // const [count, setCount] = useState(props.item.count);
-
   const callbacks = {
     onClick: (e) => {
       e.stopPropagation();
