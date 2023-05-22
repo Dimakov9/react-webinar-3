@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { plural } from "../../utils";
+import { numberWithSpaces } from "../../utils";
 import "./style.css";
 
 function Item(props) {
@@ -20,7 +20,7 @@ function Item(props) {
       <div className="Item-title">{props.item.title}</div>
       <div className="Item-price">
         <div className="Item-price__info">
-          <span>{props.item.price}</span> <span>₽</span>
+          <span>{numberWithSpaces(props.item.price)}</span> <span>₽</span>
         </div>
         {props.item.count && (
           <div className="Item-count">

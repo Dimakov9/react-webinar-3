@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { plural } from "../../utils";
+import { numberWithSpaces } from "../../utils";
+
 import "./style.css";
 
 function CartInfo({ cartList, totalPrice }) {
@@ -16,7 +18,7 @@ function CartInfo({ cartList, totalPrice }) {
                 many: "товаров",
               })}`
             : ""
-        } / ${totalPrice} ₽`}</div>
+        } / ${numberWithSpaces(totalPrice)} ₽`}</div>
       ) : (
         <span className="Cart-info__total">пусто</span>
       )}

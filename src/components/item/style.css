@@ -29,6 +29,8 @@
 .Item-price {
   display: flex;
   gap: 62px;
+  min-width: 150px;
+  justify-content: flex-end;
 }
 
 .Item-count {
@@ -39,4 +41,6 @@
 .Item-price__info {
   display: flex;
   gap: 5px;
+  min-width: 150px;
+  justify-content: flex-end;
 }

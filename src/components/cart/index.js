@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { numberWithSpaces } from "../../utils";
 import "./style.css";
 import Head from "../head";
 import List from "../list";
@@ -24,7 +25,7 @@ function Cart({ active, setActive, cartList, onDeleteItem, totalPrice }) {
               <div className="Cart__content-price">
                 <span>Итого</span>{" "}
                 <span>
-                  {totalPrice} <span>₽</span>
+                  {numberWithSpaces(totalPrice)} <span>₽</span>
                 </span>
               </div>
             </div>
